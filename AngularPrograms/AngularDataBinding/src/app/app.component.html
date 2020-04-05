@@ -1,0 +1,18 @@
+<h3>AppComponent</h3>
+
+<!-- <li *ngFor="let i of employeename">
+{{i}}
+</li> -->
+
+<select (change)="changeemp($event)">
+  <option *ngFor="let i of employeename">
+    {{i}}
+  </option>
+</select>
+<!-- <span *ngIf="isflag">This Angular</span> -->
+
+<span *ngIf="isflag;then c1 else c2"></span>
+<ng-template #c1>Conditionisvalid</ng-template>
+<ng-template #c2>NotValid</ng-template>
+
+<button (click)="myclickfunction($event)">ClickMe</button>
