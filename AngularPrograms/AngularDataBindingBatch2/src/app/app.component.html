@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}
+  </h1>
+</div>
+<div>
+  EmployeeName:
+  <!-- <li *ngFor="let i of employeename">
+    {{i}}
+    </li> -->
+    <select>
+      <option *ngFor="let i of employeename">{{i}}</option>
+    </select>
+</div>
+<div>
+  <!-- <span *ngIf="isavailable;else condition1">Condition is valid</span>
+  <ng-template #condition1>Condition is invalid</ng-template> -->
+  <span *ngIf="isavailable;then condition1 else condition2">Condition is valid</span>
+  <ng-template #condition1>Condition is valid</ng-template>
+  <ng-template #condition2>Condition is Invalid</ng-template>
+</div>
