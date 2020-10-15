@@ -1,0 +1,17 @@
+<body>
+  EmployeeName::
+  <select (change)="changeemp($event)">
+    <option *ngFor="let i of employeename">
+      {{i}}
+    </option>
+  </select>
+  <div>
+    <span *ngFor="isflag;then condition1 else condition2">
+
+      Condition is valid
+    </span>
+  <ng-template #condition1>Condition is valid</ng-template>
+  <ng-template #condition2>Condition is Invalid</ng-template>
+  </div>
+  <button (click)="myClickFunction($event)">ClickMe</button>
+</body>

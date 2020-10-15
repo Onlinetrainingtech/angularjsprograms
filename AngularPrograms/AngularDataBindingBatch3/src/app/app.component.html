@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Display the values</title>
+  </head>
+  <body>
+    <!-- <li *ngFor="let i of employee">
+     {{i}}
+    </li> -->
+
+    <select>
+      <option *ngFor="let i of employee">{{i}}</option>
+    </select>
+    <!-- <span *ngIf="isflag;else condition1">Condition is valid</span>
+    <ng-template #condition1>Condition is invalid</ng-template> -->
+
+    <span *ngIf="isflag;then condition1 else condition2">Condition is valid</span>
+    <ng-template #condition1>Condition is valid</ng-template>
+    <ng-template #condition2>Condition is invalid</ng-template>
+  </body>
+</html>
