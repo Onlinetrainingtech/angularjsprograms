@@ -1,0 +1,13 @@
+
+<h1>Welcome to {{title}}</h1>
+
+<!-- Employees:
+<select>
+   <option *ngFor="let i of empname">{{i}}</option>
+</select> -->
+
+<!--DataBinding-->
+<label>UserName</label><input type="text" [(ngModel)]="name"/>
+<input type="submit" value="Login"/>
+<h1>Welcome::</h1>
+<h3>{{name}}</h3>
