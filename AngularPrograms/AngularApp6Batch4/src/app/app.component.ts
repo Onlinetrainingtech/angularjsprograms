@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularApp6Batch4';
+
+  onClickSubmit(data)
+  {
+    alert("Enter the Email id::"+data.emailid+""+data.passwd);
+  }
 }
