@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularApp3Batch5": {
+    "AngularApp4Batch5": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularApp3Batch5",
+            "outputPath": "dist/AngularApp4Batch5",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularApp3Batch5:build"
+            "browserTarget": "AngularApp4Batch5:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularApp3Batch5:build:production"
+              "browserTarget": "AngularApp4Batch5:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularApp3Batch5:build"
+            "browserTarget": "AngularApp4Batch5:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularApp3Batch5:serve"
+            "devServerTarget": "AngularApp4Batch5:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularApp3Batch5:serve:production"
+              "devServerTarget": "AngularApp4Batch5:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "AngularApp3Batch5",
+  "defaultProject": "AngularApp4Batch5",
   "cli": {
-    "analytics": "0a0fa968-bf1c-49db-af56-5182330e1fa5"
+    "analytics": "18e7e377-3bf1-4fca-b80e-69c44a4e5d22"
   }
 }

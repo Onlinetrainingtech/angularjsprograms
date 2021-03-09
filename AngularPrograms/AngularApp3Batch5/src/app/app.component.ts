@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularApp3Batch5';
+
+  //array of employee details
+
+  employeenames=["mohamed","abi","azar","raja"]
+
+  isflag=true;
+
+  myfuncclick(event)
+  {
+    alert("Button is clicked")
+  }
 }
