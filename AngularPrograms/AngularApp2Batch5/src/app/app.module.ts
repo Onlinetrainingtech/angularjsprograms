@@ -7,6 +7,8 @@ import { SlidermoduleComponent } from './slidermodule/slidermodule.component';
 import { LoginmoduleComponent } from './loginmodule/loginmodule.component';
 import { EmployeemoduleComponent } from './employeemodule/employeemodule.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import {RouterModule} from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,18 @@ import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    //AppRoutingModule
+    RouterModule.forRoot([
+      {
+        path:"n1",
+        component:LoginmoduleComponent
+      },
+      {
+        path:"n2",
+        component:EmployeemoduleComponent
+      }
+       
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
