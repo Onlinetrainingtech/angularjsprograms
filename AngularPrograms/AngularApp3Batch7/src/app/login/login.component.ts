@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyserviceService } from '../myservice.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+    todaydate;
+
+  constructor(private myservice1:MyserviceService) { }
 
   ngOnInit(): void {
+    this.todaydate=this.myservice1.showTodayDate();
   }
 
 }
