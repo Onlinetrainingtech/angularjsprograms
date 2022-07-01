@@ -1,0 +1,31 @@
+
+<h1>Welcome to Data Biniding Concepts</h1>
+
+
+<!--Data Biniding and Templates-->
+<li *ngFor="let i of employeename">
+  {{i}}
+  </li>
+
+
+  <select>
+    <option *ngFor="let i of employeename">{{i}}</option>
+  </select>
+
+  <span *ngIf="isflag;then c1 else c2"></span>
+
+  <ng-template #c1>True block Will Work</ng-template>
+
+  <ng-template #c2>False block Will Work</ng-template>
+
+<!--Event Biniding-->
+  <select (change)="changeemp($event)">
+    <option *ngFor="let i of employeename">
+      {{i}}
+    </option>
+  </select>
+
+
+
+
+<button (click)="myclickfunction($event)">ClickMe</button>
