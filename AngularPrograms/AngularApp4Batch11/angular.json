@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularApp4Batch11"
+    }
+  },
+  "defaultProject": "AngularApp4Batch11",
+  "cli": {
+    "analytics": "ba7acbbf-b1af-4496-9c9b-2d459fe0c42f"
+  }
 }
