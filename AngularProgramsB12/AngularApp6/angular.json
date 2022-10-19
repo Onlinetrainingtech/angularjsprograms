@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularApp3": {
+    "AngularApp6": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-app3",
+            "outputPath": "dist/angular-app6",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularApp3:build:production"
+              "browserTarget": "AngularApp6:build:production"
             },
             "development": {
-              "browserTarget": "AngularApp3:build:development"
+              "browserTarget": "AngularApp6:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularApp3:build"
+            "browserTarget": "AngularApp6:build"
           }
         },
         "test": {
@@ -97,8 +97,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "ec6bae9c-3049-4abb-9f82-1fe2107cc35a"
   }
 }
