@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { MyserviceService } from './myservice.service';
 import { RegisterComponent } from './register/register.component';
 
 @NgModule({
@@ -16,7 +17,7 @@ import { RegisterComponent } from './register/register.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
