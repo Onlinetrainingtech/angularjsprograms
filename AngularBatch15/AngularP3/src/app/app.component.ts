@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularP3';
+  //creating an array
+  employeename=["mohamed","azar","Imran","xyz"]
+
+  isflag=false;
+  myClickfunction(event:any)
+  {
+    alert("Your Button is clicked")
+    console.log(event)
+  }
 }
