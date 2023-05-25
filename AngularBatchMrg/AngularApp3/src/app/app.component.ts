@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularApp3';
+  //employeename=["azar","mohamed","pavan","jeevith"]
+  isflag=true
 }

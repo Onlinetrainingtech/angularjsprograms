@@ -1,0 +1,12 @@
+<li *ngFor="let i of employeename">
+  {{i}}
+</li>
+
+<select (change)="changeemp($event)">
+  <option *ngFor="let i of employeename">{{i}}</option>
+</select>
+<span *ngIf="isflag;then c1 else c2"></span>
+<ng-template #c1>Angular is c1</ng-template>
+<ng-template #c2>Angular is c2</ng-template>
+
+<button (click)="myclickfunction($event)">ClickHere</button>
