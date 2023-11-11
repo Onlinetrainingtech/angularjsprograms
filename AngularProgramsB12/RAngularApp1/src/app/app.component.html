@@ -1,2 +1,29 @@
-<h1>{{t1}}</h1>
-<app-dashboard></app-dashboard>
+
+<!-- <div style="text-align: center;">
+    <h1>{{t1}}</h1>
+</div>
+<div>
+    EmployeeDetails:
+    <select>
+        <option *ngFor="let k of employeename">{{k}}</option>
+    </select>
+</div>
+<br>
+<div>
+  <span *ngIf="isflag;then condition1 else condition2"></span>
+  <ng-template #condition1>Condition is valid</ng-template>
+  <ng-template #condition2>Condition is not valid</ng-template>
+</div>
+<button (click)="myClickfunction($event)">ClickHere</button>
+<app-dashboard></app-dashboard> -->
+
+<p>
+    Server2 is also Working fine
+</p>
+<label>ServerName</label>
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<!-- <p>{{serverName}}</p> -->
+
+<button class="btn btn-primary" [disabled]="allowNewServer" (click)="onCreateServer()">AddServer</button>
+
+<p *ngIf="serverCreated">Server is created.ServerName is::{{serverName}}</p>
