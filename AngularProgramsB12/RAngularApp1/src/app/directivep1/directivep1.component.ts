@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class Directivep1Component {
 
+  title="One way Property Binding.."
+   bool='true';
+  src='https://www.bigbasket.com/media/uploads/p/l/10000070_15-fresho-carrot-orange.jpg?tr=w-640,q=80'
+  serverID:number=10;
+  serverStatus:string='Online';
 }
