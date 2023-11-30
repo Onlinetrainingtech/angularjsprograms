@@ -12,4 +12,9 @@ export class Directivep1Component {
   src='https://www.bigbasket.com/media/uploads/p/l/10000070_15-fresho-carrot-orange.jpg?tr=w-640,q=80'
   serverID:number=10;
   serverStatus:string='Online';
+  //Pipes Concepts
+
+  todaydate=new Date();
+  jsonval={name:"azar",age:'25',address:"mohamed"}
+  months=['jan','Feb','Mar']
 }

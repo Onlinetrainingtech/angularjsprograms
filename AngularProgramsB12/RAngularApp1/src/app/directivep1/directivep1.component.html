@@ -1,4 +1,6 @@
 <p>directivep1 works!</p>
+<p>{{title|uppercase}}</p>
+<p>{{title|lowercase}}</p>
 <p>Server with Id{{serverID}} is {{serverStatus}}</p>
 <!--Property data biniding-->
 
@@ -7,3 +9,16 @@
 <img [src]='src'/>
 
 <button [disabled]='bool' style="margin-top:20px;">Welcome</button>
+<app-angularform></app-angularform>
+<app-angular-template-drive></app-angular-template-drive>
+<!--Pipe Concepts-->
+<h1>UpperCase Pipes</h1>
+<b>{{title|uppercase}}</b>
+<b>{{title|lowercase}}</b>
+<h1>CurrencyPipe</h1>
+<b>{{1234.23|currency:"USD"}}</b>
+<h3>{{todaydate|date:'d/M/y'}}</h3>
+<b>{{todaydate|date:'shorTime'}}</b>
+<h1>JsonPipes</h1>
+<b>{{jsonval|json}}</b>
+<b>{{00.1234|percent}}</b>
