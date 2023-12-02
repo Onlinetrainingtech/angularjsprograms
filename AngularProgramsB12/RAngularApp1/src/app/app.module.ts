@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Directivep1Component } from './directivep1/directivep1.component';
 import { AngularformComponent } from './angularform/angularform.component';
 import { AngularTemplateDriveComponent } from './angular-template-drive/angular-template-drive.component';
+import { MyservieServiceService } from './myservie-service.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { AngularTemplateDriveComponent } from './angular-template-drive/angular-
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MyservieServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

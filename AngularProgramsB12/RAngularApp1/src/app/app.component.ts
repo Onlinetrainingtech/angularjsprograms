@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { MyservieServiceService } from './myservie-service.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
